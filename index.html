@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Portfolio</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       
+        #container{
+            
+            height: 100vh;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items:center ;
+        }
+
+        #card{
+            background-color: white;
+            height: 508px;
+            width: 300px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            overflow: hidden;
+        }
+
+        #pic{
+            height: 90%;
+            width: 60%;
+            position: absolute;
+            bottom: 0;
+            border-radius: 30px;
+        }
+
+        #img{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: 100%;
+            height: 40%;
+            background-color: rgb(255, 166, 0);
+            position: relative;
+            display: flex;
+            justify-content: center;
+            animation: card-expand;
+        }
+
+        h2 , p{
+            padding: 0px 15px;
+            margin-top:10px ;
+            text-align: center;
+            line-height: 20px;
+        }
+
+        p{
+            font-size: 0.9rem;
+            font-family: 'Inconsolata', monospace;
+            color: rgb(145, 142, 142);
+        }
+        h4{
+            font-family: 'Inconsolata', monospace;
+            color: orange;
+        }
+
+        .media-div{
+            padding-top: 5px;
+            padding-left: 28px;
+            border-style: solid;
+            border-left: 0px;
+            border-bottom: 0px;
+            width: 33.3%;
+            height: 100%;
+        }
+        
+        
+        #media{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .img{
+            height:35px;
+            width: 35px;
+        }
+
+        .pink:hover , .pink:active{
+            background-color: rgb(227, 153, 165);
+        }
+
+        .blue:hover , .blue:active{
+            background-color:#8BC3F9 ;
+        }
+
+        .grey:hover , .blue:active{
+            background-color: rgb(78, 76, 76);
+        }
+        #info{
+            height: 45%;
+            display: flex;
+            background-color: white;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div id="container">
+
+        <div id="card">
+            <div id="img">
+                <img src="WhatsApp_Image_2023-07-23_at_7.18.00_PM__2_-PhotoRoom-removebg-preview.png" id="pic">
+            </div>
+
+            <div id="info">
+                <h2>N. Devi Sri Sai charan</h2>
+                <h4>B.Tech CSE 2nd year</h3>
+                <p>Hello, I am charan, I  am currently pursuing my bachelors in Computer Science Engineering in SRM University AP. Iam intrested in problem solving, I am a runnerup in CODE-CLASH coding competition in my University. I am a rookie frontend developer.</p>
+            </div>
+            <div id="media">
+                <div class="media-div pink"><a href="https://www.instagram.com/devisrisaicharan/"><img src="instagram_2111463.png" class="img"></a></div>
+                <div class="media-div blue"><a href="https://www.linkedin.com/in/devi-sri-sai-charan-neelapu-719362255/"><img src="linkedin.png" class="img"></a></div>
+                <div class="media-div grey"><a href="https://github.com/Saicharan086?tab=repositories"><img src="github.png" class="img"></a></div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
